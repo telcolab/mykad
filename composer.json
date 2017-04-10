@@ -1,0 +1,19 @@
+{
+    "name": "telcolab/mykad",
+    "description": "A MyKad parser for Malaysian ID Number.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Haries Nur Ikhwan",
+            "email": "hariesnurikhwan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TelcoLAB\\MyKad\\": "src/"
+        }
+    },
+    "require": {
+        
+    }
+}
