@@ -1,5 +1,5 @@
 <?php
-namespace TelcoLAB\Facades;
+namespace TelcoLAB\MyKad\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use TelcoLAB\MyKad\MyKad as MyKadLibrary;
