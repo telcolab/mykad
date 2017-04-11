@@ -21,11 +21,6 @@ class MyKad
     public $month;
     public $year;
 
-    public function __construct($mykad)
-    {
-        $this->parse($mykad);
-    }
-
     public function parse($mykad)
     {
         $this->myKad = $mykad;
@@ -36,6 +31,7 @@ class MyKad
         $this->parseGender();
         $this->parseAge();
 
+        return get_object_vars($this);
     }
 
     public function validateMyKad()
