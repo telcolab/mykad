@@ -5,7 +5,7 @@ A package created to split and fetch details in MyKad No.
 ## Installation
 
 ```
-composer require hariesnurikhwan/mykad
+composer require telcolab/mykad
 ```
 
 Open ```config/app.php``` and register in ```providers``` key
