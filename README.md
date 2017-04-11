@@ -10,12 +10,18 @@ composer require telcolab/mykad
 
 Open ```config/app.php``` and register in ```providers``` key
 ```
-TelcoLAB\MyKad\MyKadServiceProvider::class,
+'providers' => [
+    ...
+	TelcoLAB\MyKad\MyKadServiceProvider::class,
+];
 ```
 
-and in ```alias``` key
+and in ```aliases``` key
 ```
-TelcoLAB\MyKad\Facades\MyKad::class,
+'aliases' => [
+    ...
+	TelcoLAB\MyKad\Facades\MyKad::class,
+];
 ```
 
 ## Usage
