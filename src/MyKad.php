@@ -31,7 +31,7 @@ class MyKad
         $this->parseGender();
         $this->parseAge();
 
-        return get_object_vars($this);
+        return $this;
     }
 
     public function validateMyKad()
