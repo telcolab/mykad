@@ -30,7 +30,6 @@ Call parse method.
 $mykadNo = 970424022345; //12 digits mykad number.
 
 $mykad = MyKad::parse($mykadNo);
-
 ```
 
 ##### Available properties
