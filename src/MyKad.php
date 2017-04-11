@@ -26,6 +26,7 @@ class MyKad
     {
         $this->myKad = $mykad;
 
+        $this->formatMyKad();
         $this->validateMyKad();
         $this->parseMyKad();
         $this->parseBirthday();
@@ -33,6 +34,11 @@ class MyKad
         $this->parseAge();
 
         return $this;
+    }
+
+    public function formatMyKad()
+    {
+        $this->myKad = str_replace(['-', ' '], '', $this->myKad);
     }
 
     public function validateMyKad()
