@@ -33,7 +33,9 @@ use MyKad;
 
 Call parse method.
 ```
-$mykadNo = 970424022345; //12 digits mykad number.
+$mykadNo = '970424022345'; //12 digits mykad number.
+$mykadNo = '970424-02-2345'; //12 digits mykad number.
+$mykadNo = '970424 02 2345'; //12 digits mykad number.
 
 $mykad = MyKad::parse($mykadNo);
 ```
