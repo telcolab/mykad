@@ -13,7 +13,7 @@ class MyKadServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        //
     }
 
     /**
