@@ -1,5 +1,6 @@
 {
     "name": "telcolab/mykad",
+    "type": "library",
     "description": "A MyKad parser for Malaysian ID Number.",
     "license": "MIT",
     "authors": [
@@ -8,12 +9,13 @@
             "email": "hariesnurikhwan@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7",
+        "nesbot/carbon": "~1.21"
+    },
     "autoload": {
         "psr-4": {
             "TelcoLAB\\MyKad\\": "src/"
         }
     },
-    "require": {
-        
-    }
 }
