@@ -20,6 +20,7 @@ class MyKad
     public $day;
     public $month;
     public $year;
+    public $birthdate;
 
     public function parse($mykad)
     {
@@ -62,6 +63,7 @@ class MyKad
         $parseYear = (int) substr($this->head, 0, 2);
         $this->year = $parseYear + ($parseYear >= 50 ? 1900 : 2000);
 
+        $this->birthdate = Carbon::parse($this->day . '-' . $this->month . '-' . $this->year);
     }
 
     public function parseGender()
@@ -72,7 +74,7 @@ class MyKad
 
     public function parseAge()
     {
-        $this->age = Carbon::parse($this->day . '-' . $this->month . '-' . $this->year)->age;
+        $this->age = $this->birthdate->age;
     }
 
     public function isBirthdayPassed()
