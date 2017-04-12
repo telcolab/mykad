@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/telcolab/mykad/v/stable)](https://packagist.org/packages/telcolab/mykad) [![Latest Unstable Version](https://poser.pugx.org/telcolab/mykad/v/unstable)](https://packagist.org/packages/telcolab/mykad) [![Total Downloads](https://poser.pugx.org/telcolab/mykad/downloads)](https://packagist.org/packages/telcolab/mykad) [![License](https://poser.pugx.org/telcolab/mykad/license)](https://packagist.org/packages/telcolab/mykad)
+
 ## MyKad Parser
 
 A package created to split and fetch details in MyKad No.
