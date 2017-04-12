@@ -22,12 +22,16 @@ class MyKad
     public $year;
     public $birthdate;
 
-    public function parse($mykad)
+    public function parse($mykad, $validate = true)
     {
         $this->myKad = $mykad;
 
         $this->formatMyKad();
-        $this->validateMyKad();
+
+        if ($validate) {
+            $this->validateMyKad();
+        }
+
         $this->parseMyKad();
         $this->parseBirthday();
         $this->parseGender();
@@ -111,5 +115,15 @@ class MyKad
     public function isFemale()
     {
         return $this->gender === 'female';
+    }
+
+    public function isValidMyKad()
+    {
+        try {
+            $this->validateMyKad();
+        } catch (\Exception $e) {
+            return false;
+        }
+        return true;
     }
 }
