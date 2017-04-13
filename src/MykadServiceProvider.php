@@ -16,6 +16,7 @@ class MyKadServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadTranslationsFrom(__DIR__ . '/assets/lang', 'mykad');
         $this->extendValidation(Validator::class);
     }
 
@@ -43,7 +44,8 @@ class MyKadServiceProvider extends ServiceProvider
                 });
 
                 foreach ($validations as $methodName => $validationName) {
-                    $this->app->validator->extend($validationName, $class . '@' . $methodName);
+                    $message = $this->app->translator->trans('mykad::validation.' . $validationName);
+                    $this->app->validator->extend($validationName, $class . '@' . $methodName, $message);
                 }
             }
         }
