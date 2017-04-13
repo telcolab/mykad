@@ -14,7 +14,7 @@ class Validator
 
     public function validateMykadIsOver($attribute, $value, $parameters)
     {
-        $mykad = MyKad::parse($value, false);
+        $mykad = MyKad::parse($value);
 
         return $mykad->isOver($parameters[0]);
     }
