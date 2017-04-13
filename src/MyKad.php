@@ -30,12 +30,11 @@ class MyKad
 
         if ($validate) {
             $this->validateMyKad();
+            $this->parseMyKad();
+            $this->parseBirthday();
+            $this->parseGender();
+            $this->parseAge();
         }
-
-        $this->parseMyKad();
-        $this->parseBirthday();
-        $this->parseGender();
-        $this->parseAge();
 
         return $this;
     }
