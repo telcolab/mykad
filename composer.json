@@ -3,15 +3,15 @@
     "type": "library",
     "description": "A MyKad parser for Malaysian ID Number.",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Haries Nur Ikhwan",
-            "email": "hariesnurikhwan@gmail.com"
-        }
-    ],
+    "authors": [{
+        "name": "Haries Nur Ikhwan",
+        "email": "hariesnurikhwan@gmail.com"
+    }],
     "require": {
         "php": ">=7",
-        "nesbot/carbon": "~1.21"
+        "nesbot/carbon": "~1.21",
+        "illuminate/support": "^5.4",
+        "telcolab/extender": "1.*"
     },
     "autoload": {
         "psr-4": {
