@@ -52,6 +52,22 @@ class MyKad
             throw new InvalidMyKadLenghtException;
         }
 
+        /**
+         * Validate birthdate
+         */
+        $head = substr($this->myKad, 0, 6);
+
+        $day = (int) substr($head, 4, 2);
+        $month = (int) substr($head, 2, 2);
+        $parseYear = (int) substr($head, 0, 2);
+        $year = $parseYear + ($parseYear >= 50 ? 1900 : 2000);
+
+        try {
+            Carbon::parse($day . '-' . $month . '-' . $year);
+        } catch (\Exception $e) {
+            throw new InvalidMyKadException;
+        }
+
         return true;
     }
 
